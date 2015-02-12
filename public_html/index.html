@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>TODO supply a title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<!--	custom styling-->
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+    </head>
+    <body>
+	<script>
+		    var controller;
+		    $(document).ready(function($) {
+	    // init controller
+	    controller = new ScrollMagic();
+	    });</script>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header page-scroll">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav navbar-right">
+			<li class="hidden">
+			    <a href="#page-top"></a>
+			</li>
+			<li>
+			    <a class="page-scroll" href="#services">Services</a>
+			</li>
+			<li>
+			    <a class="page-scroll" href="#about">About</a>
+			</li>
+			<li>
+			    <a class="page-scroll" href="#contact">Contact</a>
+			</li>
+		    </ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	    </div>
+	    <!-- /.container-fluid -->
+	</nav>
+	<div style="position: fixed;height:100%;width:100%;"><img id="main-img" style="width:100%;" src="images/akaroa.jpg" class="img-responsive" alt="Responsive image"></div>
+	<div id="page-top"></div>
+	<div id="main-content" style="position: absolute;width:100%;left:0;background: white;">
+
+	    <section id="intro">
+		<div class="container" style="position:relative;">
+		    <h3>We make  intuitive interfaces for devices both big and small</h3>
+		    <img id="pin1" src="http://www.appsails.com/wp-content/themes/appsails/assets/scalable-devices.png" class="devices" alt="">
+		</div>
+	    </section>
+	    <section id="about">
+		<div class="container" style="position:relative;">
+		    <h3>ABOUT US</h3>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus urna nisl, nec pulvinar nisi aliquam at. Duis condimentum malesuada fringilla. Pellentesque gravida dui id lacinia maximus. Fusce vel consequat nisl, eget fermentum odio. Sed pharetra lectus sit amet enim aliquam, at consequat tortor gravida. Duis non justo non magna rhoncus sollicitudin vitae non sem. Phasellus porta, mauris eget varius mollis, elit lacus accumsan tellus, nec vulputate nisl nisi id risus. Ut faucibus viverra metus, elementum posuere nisi malesuada nec. Mauris non ipsum lectus.</p><img id="rabbit-img"/>
+		</div>
+	    </section>
+	    <section id="services">
+		<div class="container" style="position:relative;">
+		    <h3>OUR SERVICES</h3>
+		    <div id="services-wrapper">
+			<div class="arrow arrow-right"></div>
+			<div class="arrow arrow-left"></div>
+			<div class="service">
+			    <p>Maecenas aliquet nibh a turpis malesuada finibus. Integer lacinia eros urna, id fringilla sapien iaculis vel. Cras elit arcu, porta eu risus sed, scelerisque viverra leo. Nunc tortor neque, pellentesque eget tristique eu, rutrum in mi. Ut ipsum nibh, vehicula et egestas eget, laoreet in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vitae volutpat ipsum.</p>
+			    <img id="plan" src="images/example_imagesequence_01.png" alt="" style="display: inline;">
+			</div>
+			<div class="service">
+			    <p>Donec eget nisi a enim consectetur molestie. Maecenas non purus sapien. Mauris pulvinar neque nunc, non rutrum metus mollis ac. Mauris fringilla aliquet eros aliquam varius. Fusce tristique, orci nec pellentesque volutpat, lorem eros tempus.</p>
+			    <img id="collaborate" src="images/example_imagesequence_02.png" alt="" style="display: inline;">
+			</div>
+			<div class="service">
+			    <p>Aliquam gravida sed lacus sollicitudin vestibulum. Aenean ac ex quis tortor scelerisque feugiat. Donec ullamcorper justo non arcu bibendum posuere.</p>
+			    <img id="deliver" src="images/example_imagesequence_03.png" alt="" style="display: inline;">
+			</div>
+		    </div>
+
+		</div>
+	    </section>
+	    <section id="contact">
+		<div class="container" style="position:relative;">
+		    <h3>CONTACT US</h3>
+		    <p>We'd love to hear from you! Drop us a line using the contact form below.</p>
+		    <div class="col-md-8 col-md-offset-2">   
+			<form class="form-horizontal" role="form" method="post" action="index.php">
+			    <div class="form-group">
+
+				<input type="text" class="form-control" id="name" name="name" placeholder="NAME" value="">
+
+			    </div>
+			    <div class="form-group">      
+
+				<input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" value="">
+
+			    </div>
+			    <div class="form-group">
+
+
+				<textarea placeholder="MESSAGE" class="form-control" rows="4" name="message"></textarea>
+
+			    </div>
+			    <div class="form-group">
+
+				<input id="submit" name="submit" type="submit" value="SEND MESSAGE" class="btn btn-primary pull-right">
+
+			    </div>
+
+			</form>
+		    </div>
+
+		</div>
+	    </section>
+
+	    <footer>© 2015 All rights reserved.</footer>
+	</div>
+	<script>
+		    $(document).ready(function($) {
+	    //SCROLLMAGIC PINNING//
+	    // build scene
+	    var scene1 = new ScrollScene({triggerElement: ".arrow-right", duration: 650})
+		    .setPin(".arrow-right")
+		    .addTo(controller);
+		    // show indicators (requires debug extension)
+		    scene1.addIndicators();
+		    var scene2 = new ScrollScene({triggerElement: ".arrow-left", duration: 650})
+		    .setPin(".arrow-left")
+		    .addTo(controller);
+		    scene2.addIndicators();
+		    
+		    //SCROLLMAGIC IMAGE SEQUENCE//
+		    // define images
+		    var images = [
+			    "images/example_imagesequence_01.png",
+			    "images/example_imagesequence_02.png",
+			    "images/example_imagesequence_03.png",
+			    "images/example_imagesequence_04.png",
+			    "images/example_imagesequence_05.png",
+			    "images/example_imagesequence_06.png",
+			    "images/example_imagesequence_07.png"
+		    ];
+		    // TweenMax can tween any property of any object. We use this object to cycle through the array
+		    var obj = {curImg: 0};
+		    // create tween
+		    var tween = TweenMax.to(obj, 0.5,
+		    {
+		    curImg: images.length - 1, // animate propery curImg to number of images
+			    roundProps: "curImg", // only integers so it can be used as an array index
+			    repeat: 3, // repeat 3 times
+			    immediateRender: true, // load first image automatically
+			    ease: Linear.easeNone, // show every image the same ammount of time
+			    onUpdate: function () {
+			    $("#rabbit-img").attr("src", images[obj.curImg]); // set the image source
+			    }
+		    }
+		    );
+//		    // init controller
+//		    var controller = new ScrollMagic();
+		    // build scene
+		    var scene = new ScrollScene({triggerElement: "#intro", duration: 2200})
+		    .setTween(tween)
+		    .addTo(controller);
+		    // handle form change
+		    $("form.move input[name=duration]:radio").change(function () {
+	    scene.duration($(this).val());
+	    });
+		    // show indicators (requires debug extension)
+		    scene.addIndicators();
+	    
+		    // load main content below screen height
+		    $(function() {
+		    $('#main-content').css({'top': $(window).height()});
+		    });
+		    window.onload = function() {
+
+		    // this will fire after the entire page is loaded, including images
+		    $(function() {
+		    $('#main-content').css({'top': $("#main-img").height()});
+		    })
+		    };
+
+	    });
+		    
+	</script>
+    </body>
+</html>
